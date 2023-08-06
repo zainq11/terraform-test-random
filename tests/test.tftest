@@ -5,6 +5,6 @@ step "eval" {
 
     postcondition {
         condition = length(outputs.names) == 3
-        error_message = "wrong length of outputs ${length(outputs.names)}
+        error_message = "wrong length of outputs bro ${length(outputs.names)}
     }
 }
