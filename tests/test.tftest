@@ -1,10 +1,10 @@
-step "eval" {
-    variables = {
+run "eval" {
+    variables {
         number = 3
     }
 
     postcondition {
         condition = length(outputs.names) == 3
-        error_message = "wrong length of outputs ${length(outputs.names)}
+        error_message = "wrong length of outputs ${length(outputs.names)}"
     }
 }
