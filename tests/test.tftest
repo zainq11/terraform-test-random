@@ -3,7 +3,7 @@ run "eval" {
         number = 3
     }
 
-    postcondition {
+    assert {
         condition = length(outputs.names) == 3
         error_message = "wrong length of outputs ${length(outputs.names)}"
     }
