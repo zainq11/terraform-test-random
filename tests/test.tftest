@@ -1,10 +1,10 @@
 run "eval" {
     variables {
-        number = 3
+        number = 5
     }
 
     assert {
-        condition = length(outputs.names) == 3
-        error_message = "wrong length of outputs ${length(outputs.names)}"
+        condition = length(random_pet.pet) == 5
+        error_message = "wrong length of outputs ${length(random_pet.pet)}"
     }
 }
