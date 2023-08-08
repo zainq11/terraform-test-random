@@ -1,6 +1,6 @@
 run "eval" {
     variables {
-        number = 3
+        number = 2
     }
 
     assert {
