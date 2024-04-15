@@ -54,8 +54,3 @@ resource "random_pet" "pet" {
 output "names" {
     value = [for pet in random_pet.pet : pet.id]
 }
-
-module "random" {
-  source  = "tfcdev-edbf8d57.ngrok.io/abdutest/random/test"
-  version = "1.2.3"
-}
