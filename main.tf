@@ -7,6 +7,11 @@ terraform {
     }
 }
 
+module "main" {
+  source  = "app.staging.terraform.io/abdutest/module/random"
+  version = "1.2.3"
+}
+
 variable "number" {
     type = number
     nullable = false
@@ -48,4 +53,9 @@ resource "random_pet" "pet" {
 }
 output "names" {
     value = [for pet in random_pet.pet : pet.id]
+}
+
+module "random" {
+  source  = "app.staging.terraform.io/abdutest/random/test"
+  version = "1.2.3"
 }
