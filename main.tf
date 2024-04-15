@@ -8,7 +8,7 @@ terraform {
 }
 
 module "main" {
-  source  = "app.staging.terraform.io/abdutest/module/random"
+  source  = "tfcdev-edbf8d57.ngrok.io/abdutest/module/random"
   version = "1.2.3"
 }
 
@@ -56,6 +56,6 @@ output "names" {
 }
 
 module "random" {
-  source  = "app.staging.terraform.io/abdutest/random/test"
+  source  = "tfcdev-edbf8d57.ngrok.io/abdutest/random/test"
   version = "1.2.3"
 }
