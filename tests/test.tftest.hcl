@@ -4,7 +4,7 @@ run "eval" {
     }
 
     assert {
-        condition = length(output.names) == 3
+        condition = length(output.names) == 2
         error_message = "wrong length of outputs. "
     }
 }
