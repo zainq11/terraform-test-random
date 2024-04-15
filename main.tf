@@ -7,7 +7,7 @@ terraform {
     }
 }
 
-module "main" {
+module "module" {
   source  = "tfcdev-edbf8d57.ngrok.io/abdutest/module/random"
   version = "1.2.3"
 }
