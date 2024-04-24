@@ -8,7 +8,7 @@ terraform {
 }
 
 module "module" {
-  source  = "tfcdev-edbf8d57.ngrok.io/abdutest/module/random"
+  source  = "app.staging.terraform.io/abdutest/module/random-test"
   version = "1.2.3"
 }
 
