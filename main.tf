@@ -11,7 +11,7 @@ module "module" {
   source  = "app.terraform.io/abdutest/module/random"
   version = "1.2.3"
 }
- 
+
 variable "number" {
     type = number
     nullable = false
