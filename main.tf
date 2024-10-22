@@ -5,7 +5,7 @@ terraform {
             version = "~> 3.4"
         }
     }
-}
+} 
 
 module "module" {
   source  = "app.terraform.io/abdutest/module/random"
