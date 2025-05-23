@@ -12,7 +12,7 @@ variable "number" {
     nullable = false
     default = 1
 }
- 
+
 variable "length" {
     type = number
     nullable = false
