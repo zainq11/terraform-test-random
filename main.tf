@@ -5,7 +5,7 @@ terraform {
             version = "~> 3.4"
         }
     }
-} 
+}  
    
 variable "number" {
     type = number
