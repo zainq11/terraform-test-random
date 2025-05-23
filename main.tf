@@ -6,7 +6,7 @@ terraform {
         }
     }
 } 
-
+ 
 variable "number" {
     type = number
     nullable = false
